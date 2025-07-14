@@ -55,7 +55,7 @@ main {
   background-color: white;
   padding: 20px 0;
   width: 100%;
-  margin: 0 auto;
+  margin: 30px 0;
 }
 
 main h2 {
@@ -94,11 +94,11 @@ h4 {
 .secondary {
   background-color: #e4ccc8;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
   text-align: center;
   padding: 30px 0;
-  margin: 30px 0;
+  margin: 0 auto;
 }
 
 footer {

@@ -3,8 +3,8 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
@@ -53,7 +53,9 @@ header a {
 
 main {
   background-color: white;
-  padding: 60px 0;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 main h2 {
@@ -85,10 +87,17 @@ main p {
   opacity: 0.7;
 }
 
+h4 {
+  text-align: center;
+}
+
 .secondary {
   background-color: #e4ccc8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0;
   margin: 30px 0;
 }
 
@@ -160,17 +169,24 @@ section {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
 .embed {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
-.cards {
+
+.card {
   background-color: antiquewhite;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.5;
-  color: #2f2d21;
+  line-height: 36px;
+  text-align: left;
   margin: 30px 0;
+  color: #2f2d21;
 }
 
 .card-header.grid {
@@ -213,7 +229,7 @@ section {
   }
 
   header h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   header h3 {
@@ -224,7 +240,12 @@ section {
     padding: 30px;
   }
 
-  .card-reader img {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .card-header img {
     display: none;
   }
 

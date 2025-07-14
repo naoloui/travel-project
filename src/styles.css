@@ -140,6 +140,32 @@ section {
   grid-gap: 64px;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards {
+  background-color: antiquewhite;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #2f2d21;
+  margin: 30px 0;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #8c744e;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -157,12 +183,14 @@ section {
     font-size: 12px;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-
   section {
-    padding: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px;
   }
+}
+
+.secondary {
+  background-color: #e4ccc8;
+  text-align: center;
 }

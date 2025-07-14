@@ -1,10 +1,10 @@
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 body {
   font-family: "poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 header {
@@ -84,6 +84,11 @@ main p {
   opacity: 0.7;
 }
 
+.secondary {
+  background-color: #e4ccc8;
+  text-align: center;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -140,10 +145,22 @@ section {
   grid-gap: 64px;
 }
 
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
 .cards {
   background-color: antiquewhite;
   font-weight: 700;
@@ -151,6 +168,22 @@ section {
   line-height: 1.5;
   color: #2f2d21;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.gallery {
+  text-align: center;
 }
 
 .btn {
@@ -184,13 +217,14 @@ section {
   }
 
   section {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 100px;
+    padding: 30px;
   }
-}
 
-.secondary {
-  background-color: #e4ccc8;
-  text-align: center;
+  .card-reader img {
+    display: none;
+  }
+
+  embed {
+    aspect-ratio: 16 / 9;
+  }
 }
